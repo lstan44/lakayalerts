@@ -1,0 +1,10 @@
+{
+  "name": "@citadel/config-tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

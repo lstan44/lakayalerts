@@ -1,0 +1,21 @@
+name = "citadel-ingest"
+main = "src/index.ts"
+compatibility_date = "2024-04-01"
+
+# Queue consumer — processes incoming claims
+# [[queues.consumers]]
+# queue = "citadel-ingest"
+# max_batch_size = 10
+# max_batch_timeout = 30
+
+# Can produce to alerts and analytics queues
+# [[queues.producers]]
+# binding = "ALERT_QUEUE"
+# queue = "citadel-alerts"
+
+# [[queues.producers]]
+# binding = "ANALYTICS_QUEUE"
+# queue = "citadel-analytics"
+
+[vars]
+ENVIRONMENT = "development"

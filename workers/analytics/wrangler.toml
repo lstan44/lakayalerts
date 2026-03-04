@@ -1,0 +1,17 @@
+name = "citadel-analytics"
+main = "src/index.ts"
+compatibility_date = "2024-04-01"
+
+# Queue consumer — processes analytics tasks
+# [[queues.consumers]]
+# queue = "citadel-analytics"
+# max_batch_size = 10
+# max_batch_timeout = 60
+
+# Can produce alerts
+# [[queues.producers]]
+# binding = "ALERT_QUEUE"
+# queue = "citadel-alerts"
+
+[vars]
+ENVIRONMENT = "development"

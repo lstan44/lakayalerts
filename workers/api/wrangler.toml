@@ -1,0 +1,29 @@
+name = "citadel-api"
+main = "src/index.ts"
+compatibility_date = "2024-04-01"
+
+# Cloudflare R2 bucket for evidence storage
+# [[r2_buckets]]
+# binding = "EVIDENCE_BUCKET"
+# bucket_name = "citadel-evidence"
+
+# Cloudflare Queue bindings
+# [[queues.producers]]
+# binding = "INGEST_QUEUE"
+# queue = "citadel-ingest"
+
+# [[queues.producers]]
+# binding = "ALERT_QUEUE"
+# queue = "citadel-alerts"
+
+# [[queues.producers]]
+# binding = "ANALYTICS_QUEUE"
+# queue = "citadel-analytics"
+
+# KV namespace for caching
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "your-kv-namespace-id"
+
+[vars]
+ENVIRONMENT = "development"

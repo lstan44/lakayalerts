@@ -1,0 +1,26 @@
+{
+  "name": "@citadel/config-eslint",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "base.js",
+  "exports": {
+    "./base": "./base.js",
+    "./react": "./react.js",
+    "./worker": "./worker.js"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.3.0"
+  },
+  "peerDependencies": {
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-react-hooks": { "optional": true },
+    "eslint-plugin-react-refresh": { "optional": true }
+  }
+}

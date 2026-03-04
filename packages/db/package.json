@@ -1,0 +1,33 @@
+{
+  "name": "@citadel/db",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "echo 'TODO: run supabase migrations'",
+    "db:seed": "echo 'TODO: seed database'",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@citadel/ontology": "workspace:*",
+    "@supabase/supabase-js": "^2.39.7"
+  },
+  "devDependencies": {
+    "@citadel/config-typescript": "workspace:*",
+    "typescript": "^5.5.3"
+  }
+}

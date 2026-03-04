@@ -1,0 +1,7 @@
+{
+  "extends": "@citadel/config-typescript/worker.json",
+  "compilerOptions": {
+    "types": ["@cloudflare/workers-types"]
+  },
+  "include": ["src"]
+}

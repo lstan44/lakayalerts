@@ -1,0 +1,9 @@
+{
+  "extends": "@citadel/config-typescript/react.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}

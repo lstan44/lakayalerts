@@ -1,0 +1,12 @@
+name = "citadel-alerts"
+main = "src/index.ts"
+compatibility_date = "2024-04-01"
+
+# Queue consumer — processes alert dispatch
+# [[queues.consumers]]
+# queue = "citadel-alerts"
+# max_batch_size = 10
+# max_batch_timeout = 5
+
+[vars]
+ENVIRONMENT = "development"
